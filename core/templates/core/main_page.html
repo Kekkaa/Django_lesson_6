@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='ru'>
+	<head>
+		<meta charset="utf-8">
+		<title>Университет Hedwig</title>
+		{% load static %}
+		<link rel="icon" type="Image/x-icon" href="images/logo.png">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+			  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	</head>
+
+	<body background-color="#191919">
+		<script src="js/bootstrap.min.js"></script>
+			
+		<nav class="navbar navbar-expand-lg sticky-top" style="background-color: #f9d51f;">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="{% url 'main_page' %}">
+      				<img src="{% static 'core/images/logo.png' %}" alt="Logo" width="30px" class="d-inline-block align-text-top">
+      			</a>
+				
+				<a class="navbar-brand" href="{% url 'main_page' %}">Университет Hedwig</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
+						aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            			<span class="navbar-toggler-icon"></span>
+           		 </button>
+			
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+						<a class="nav-link" href="{% url 'employers' %}">Наши сотрудники</a>
+						<a class="nav-link" href="{% url 'employee_of_the_month' %}">Сотрудник месяца</a>
+						<a class="nav-link" href="{% url 'add_employee' %}">Добавить сотрудника</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!--Содержимое страницы-->
+		<br>
+		<div style ="margin:20px;">
+  			<p style="text-align:center; font-size:larger; font-weight:bolder;">Всегда мечтали быть волшебником, но не с кем было поделиться мечтой?
+				Теперь она осуществилась! Добро пожаловать в университет магии и волшебства Хэдвиг!</p>
+		</div>
+			<div style ="text-align:left; margin:20px; text-indent: 30px;">
+				<p>Это место, где ваши мечты становятся реальностью! Мы являемся лидерами в своей
+					области и предлагаем нашим студентам лучшее образование, которое поможет им достичь максимальных высот в магическом и волшебном мире.</p>
+				<p>Преподавательский состав нашего университета состоит из высококвалифицированных и опытных специалистов, имеющих глубокие познания в магии,
+					волшебстве, мистицизме и других смежных областях. Они с радостью передадут вам свои знания и помогут
+					принять наиболее рациональные решения в своей области.</p>
+				<p>Мы гордимся тем, что наши выпускники пользуются высоким авторитетом и находятся во многих ключевых позициях в магическом и волшебном сообществе.
+					Наше приверженность к качеству, инновации и стандартам высшего образования гарантирует, что каждый студент, который учится у нас, получит богатый
+					и интеллектуально стимулирующий опыт.</p>
+				<p>Благодарим вас за интерес к нашей университетской программе и приглашаем вас в этот увлекательный и волшебный мир образования!</p>
+				<p><em>Для поступления необходимо ознакомиться с правилами и подать заявку на распределение,
+					после чего связаться с директором университета.</em></p>
+				<p>Если у Вас есть знания, и вы хотите ими поделиться с другими, то, возможно,
+					Вам стоит стать преподавателем. Для этого вам стоит ознакомиться со списком вакансий.</p>
+				<p><strong>Вакантны места преподавателей по следующим предметам</strong> - История магии, Нумерология,
+					Магловедение, Зельеварение, Латынь. Также Вы можете подать заявку на предмет, которого нет
+					в нашей школе, но который, по Вашему мнению, будет интересен для наших учеников.</p>
+			</div>
+	</body>
+</html>
